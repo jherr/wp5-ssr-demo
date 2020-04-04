@@ -14,7 +14,6 @@ module.exports = (express, app, done) => {
     writeToDisk: true,
   }
 
-  console.log(webpackDevMiddleware)
   const devMiddleware = webpackDevMiddleware(compiler, options)
 
   app.use('/favicon.ico', (req, res) => {

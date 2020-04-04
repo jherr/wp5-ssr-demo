@@ -6,8 +6,8 @@
   "author": "Zack Jackson <zack@ScriptedAlchemy.com>",
   "license": "MIT",
   "scripts": {
-    "build": "concurrently \"cd website1; yarn && yarn build\" \"cd website2; yarn && yarn build\"",
-    "serve": "concurrently \"cd website1; yarn yarn serve\" \"cd website2; yarn serve\""
+    "build": "concurrently \"cd website1; npm install && npm run build\" \"cd website2; npm install && npm run build\"",
+    "serve": "concurrently \"cd website1; npm run serve\" \"cd website2; npm run serve\""
   },
   "dependencies": {
     "concurrently": "^5.1.0"

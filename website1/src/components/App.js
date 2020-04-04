@@ -1,15 +1,10 @@
 import React from 'react'
-
+// eslint-disable-next-line
 import SomeComponent from 'website2/SomeComponent'
-import Sidebar from './Sidebar'
-
-import styles from '../css/App.css'
 
 export default () => (
   <div>
-    <div className={styles.app}>
-      <Sidebar />
-      <SomeComponent />
-    </div>
+    <h1>This is website 1</h1>
+    <SomeComponent />
   </div>
 )
