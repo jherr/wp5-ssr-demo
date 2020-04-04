@@ -11,6 +11,6 @@ const SomeComponent = () => (
   >
     Header
   </div>
-);
+)
 
 export default SomeComponent

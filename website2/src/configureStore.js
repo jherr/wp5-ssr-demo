@@ -1,1 +1,1 @@
-export default (preLoadedState) => preLoadedState;
+export default preLoadedState => preLoadedState

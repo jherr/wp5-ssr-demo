@@ -11,7 +11,7 @@ export default async (req, res, next) => {
   try {
     const extractor = new ChunkExtractor({ statsFile })
     // Wrap your application using "collectChunks"
-    const jsx = extractor.collectChunks(createApp(App, {}))
+    const jsx = extractor.collectChunks(createApp(App))
 
     // Render your application
     const html = renderToString(jsx)
@@ -45,6 +45,6 @@ export default async (req, res, next) => {
   }
 }
 
-const createApp = (App) => (
+const createApp = App => (
   <App />
 )

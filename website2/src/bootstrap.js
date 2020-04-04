@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Header from './components/SomeComponent'
+import App from './components/App'
 
 const render = App => {
   const root = document.getElementById('root')
 
   ReactDOM.hydrate(
-    <Header />,
+    <App />,
     root,
   )
 }
