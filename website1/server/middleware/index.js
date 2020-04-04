@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser')
 const envMiddleware = require('./environmentMiddleware')
 const securityMiddleware = require('./security')
 
+
 module.exports = (express, app, done) => {
   app.use(bodyParser.json())
   app.use(bodyParser.urlencoded({ extended: false }))

@@ -26,7 +26,10 @@ module.exports = merge.smart(common, {
       },
       shared: [
         'react',
-        'react-dom'
+        'react-dom',
+        'redux',
+        'react-redux',
+        'redux-devtools-extension',
       ],
     }),
   ],
