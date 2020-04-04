@@ -1,0 +1,15 @@
+{
+  "name": "icarus",
+  "description": "React architecture at scale",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "author": "Zack Jackson <zack@ScriptedAlchemy.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "concurrently \"cd website1; yarn && yarn build\" \"cd website2; yarn && yarn build\"",
+    "serve": "concurrently \"cd website1; yarn yarn serve\" \"cd website2; yarn serve\""
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
