@@ -1,3 +1,4 @@
 import React from 'react'
+import Header from './SomeComponent'
 
-export default ({ children }) => <div>{children}</div>
+export default () => <div><Header /></div>

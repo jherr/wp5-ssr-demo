@@ -1,6 +1,5 @@
 const merge = require('webpack-merge')
 const path = require('path')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const baseConfig = require('./client.base')
 const env = require('../env')()
 const config = require('../config')

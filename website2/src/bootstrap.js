@@ -1,12 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
 import App from './components/App'
 
 const render = App => {
   const root = document.getElementById('root')
 
   ReactDOM.hydrate(
-    <App />,
+    <AppContainer>
+      <App />
+    </AppContainer>,
     root,
   )
 }

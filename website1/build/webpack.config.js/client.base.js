@@ -24,13 +24,7 @@ module.exports = merge.smart(common, {
       remotes: {
         website2: 'website2',
       },
-      shared: [
-        'react',
-        'react-dom',
-        'redux',
-        'react-redux',
-        'redux-devtools-extension',
-      ],
+      shared: ['react', 'react-dom'],
     }),
   ],
 })
