@@ -1,4 +1,5 @@
 const ExtractCSSChunks = require('mini-css-extract-plugin')
+const path = require('path')
 
 const babelLoader = {
   test: /\.(js|jsx|mjs)$/,
@@ -18,30 +19,20 @@ const baseStyleLoader = initialLoaders => ({
   exclude: /node_modules/,
   use: [
     ...initialLoaders,
-    // {
-    //   loader: 'postcss-loader',
-    //   options: {
-    //     config: {
-    //       path: path.join(__dirname, 'postcss.config.js'),
-    //     },
-    //   },
-    // },
+    {
+      loader: 'postcss-loader',
+      options: {
+        config: {
+          path: path.join(__dirname, 'postcss.config.js'),
+        },
+      },
+    },
     {
       loader: 'sass-loader',
       options: {
         sourceMap: true,
       },
     },
-    // {
-    //   loader: 'sass-resources-loader',
-    //   options: {
-    //     resources: [
-    //       path.join(__dirname, '../../src/assets/css/variables.scss'),
-    //       path.join(__dirname, '../../src/assets/css/utils/mixins.scss'),
-    //       path.join(__dirname, '../../src/assets/css/utils/extends.scss'),
-    //     ],
-    //   },
-    // },
   ],
 })
 
